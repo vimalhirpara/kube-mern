@@ -1,0 +1,29 @@
+secret.yaml
+
+data > USER_NAME > mongouser:  bW9uZ291c2Vy
+data > PASSWORD > mongopassword:  bW9uZ29wYXNzd29yZA==
+
+
+Example URL:    https://www.youtube.com/watch?v=7XDeI5fyj3w
+
+How to Run: See video after 01:08:00
+
+minikube start
+
+kubectl get pod
+
+kubectl apply -f secret.yaml
+kubectl apply -f mongo-config.yaml
+kubectl apply -f mongo-app.yaml
+kubectl apply -f web-app.yaml
+minikube ip
+kubectl get svc
+minikube service webapp-service
+
+
+kubectl delete deployment --all
+kubectl delete service --all
+kubectl delete secret --all
+kubectl delete configmap --all
+
+minikube stop
