@@ -1,5 +1,6 @@
 secret.yaml
 
+Base64 Encode
 data > USER_NAME > mongouser:  bW9uZ291c2Vy
 data > PASSWORD > mongopassword:  bW9uZ29wYXNzd29yZA==
 
