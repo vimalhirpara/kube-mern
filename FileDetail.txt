@@ -17,7 +17,7 @@ kubectl apply -f mongo-config.yaml
 kubectl apply -f mongo-app.yaml
 kubectl apply -f web-app.yaml
 minikube ip
-kubectl get svc
+kubectl get svc/services
 minikube service webapp-service
 
 
