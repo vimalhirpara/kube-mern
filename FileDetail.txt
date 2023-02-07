@@ -19,12 +19,13 @@ kubectl apply -f mongo-app.yaml
 kubectl apply -f web-app.yaml
 minikube ip
 kubectl get svc/services
-minikube service webapp-service
+minikube service webapp-service/Service Name
 
-
+kubectl delete pod --all
 kubectl delete deployment --all
 kubectl delete service --all
 kubectl delete secret --all
 kubectl delete configmap --all
 
 minikube stop
+minikube delete
